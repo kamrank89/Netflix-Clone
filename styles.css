@@ -1,0 +1,184 @@
+/* Body */
+body{
+    background-color: black;
+    margin: 0;
+}
+
+/* Main first section */
+#main-window{
+    background-image: url("https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW92aWVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+    
+}
+
+/* Top bar */
+.top-bar{
+    background: linear-gradient(black, 70%, transparent);
+    height: 120px;
+}
+
+/* Top left content of the head section */
+.header-left{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Netflix Name */
+.header-left h1 {
+    color: red;
+    font-family: 'Inconsolata';
+    margin-left: 2%;
+    margin-top: 1%;
+    font-size: 2rem;
+}
+
+/* Contents next to Netflix name */
+.header-left .left-content{
+    color: white;
+    font-size: 0.7rem;
+    margin-left: 2.5%;
+    margin-top: 2%;
+    font-family: 'Inconsolata';
+    text-shadow: 0 1px black;
+}
+
+.left-content:hover{
+    color: lightgray;
+    cursor: pointer;
+}
+
+/* Top right content of the right section */
+.header-right{
+    display: flex;
+    flex-direction: row;
+    position:absolute; right:0;
+    margin-right:  8%;
+    align-items: center;
+}
+
+.header-right .dropdown-icon{
+    font-size: 1.8rem;
+    margin: 0 0 0 2.5%;
+
+}
+
+.header-left h4{
+    margin-left: 20%;
+    color: white;
+    
+}
+
+.header-left .bell-icon{
+    margin-right: 10%;
+}
+
+
+/* Buttons */
+
+.button{
+    display: flex;
+    
+    margin-top: 12%;
+    margin-left: 5%;
+    
+}
+
+.button .left {
+    font-size: 14px;
+    width: 100px;
+    background-color:
+    #ededed;
+    border: 0;
+    cursor: pointer;
+    color: black;
+    border-radius: 10px;
+}
+.button .right {
+    font-size: 14px;
+    margin-left: 10px;
+    color: white;
+    width: 150px;
+    height: 40px;
+    background-color: #aba7a7;
+    border: 0;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+
+/* Section two */
+#section-two{
+    position: relative;
+    z-index: 2;
+    top: -100px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+
+
+/* Image box */
+.box > h4{
+    color: white;
+    font-family: 'Inconsolata';
+}
+
+/* Images */
+.images {
+    display: flex;
+    overflow: hidden;
+    height: 30vh;
+    margin-top: 2%;
+    
+}
+
+.images > img{
+    margin-right: 2%;
+}
+
+
+.img:hover{
+    transform: scale(1.2);
+}
+/* Buttons */
+.box > a {
+    position: relative;
+    font-size: 2.5rem;
+    margin-top: 7%;
+    z-index: 4;
+}
+
+.left-button,
+.right-button{
+    color: white;
+    
+}
+
+.left-button{
+    top: -17vh;
+    left: 1%;
+}
+
+.left-button:hover{
+    color: lightgray;
+}
+
+.right-button{
+    top: -17vh;
+    right: -86vw;
+}
+.right-button:hover{
+    color: lightgray;
+}
+
+/* Media */
+@media screen and (min-width:500px) and (max-width:800px){
+    .button {
+        margin-top: 30%;
+    }
